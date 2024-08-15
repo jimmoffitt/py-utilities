@@ -6,10 +6,16 @@ import os
 import random
 import psycopg
 from psycopg import OperationalError
+from pathlib import Path
 from dotenv import load_dotenv
 
 # Load environment variables from .env.local
-load_dotenv('.env.local')
+# Get the directory of the current script
+script_dir = Path(__file__).parent 
+
+# Construct the path to .env.local within the script's directory
+env_path = script_dir / '.env.local'
+load_dotenv(dotenv_path=env_path)
 
 # Number of threads to create
 NUM_THREADS = 10

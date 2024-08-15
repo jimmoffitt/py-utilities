@@ -4,11 +4,12 @@ import os
 from dotenv import load_dotenv
 
 # Load environment variables from .env.local
-#load_dotenv('.env.local')
-#load_dotenv(os.path.join(os.pardir, '.env.local'))
-load_dotenv(os.path.join('..', '.env.local'))
+# Get the directory of the current script
+script_dir = Path(__file__).parent 
 
-print(os.getcwd())
+# Construct the path to .env.local within the script's directory
+env_path = script_dir / '.env.local'
+load_dotenv(dotenv_path=env_path)
 
 # Retrieve connection parameters
 host = os.environ.get("DATABASE_HOST")

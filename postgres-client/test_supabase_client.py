@@ -3,7 +3,12 @@ import time
 from supabase import create_client, Client
 from dotenv import load_dotenv
 
-load_dotenv('.env.local')
+# Get the directory of the current script
+script_dir = Path(__file__).parent 
+
+# Construct the path to .env.local within the script's directory
+env_path = script_dir / '.env.local'
+load_dotenv(dotenv_path=env_path)
 
 # As doc'ed:
 url: str = os.environ.get("SUPABASE_URL")

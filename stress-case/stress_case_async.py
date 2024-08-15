@@ -7,10 +7,16 @@ import random
 import psycopg
 import aiohttp
 import argparse
+from pathlib import Path
 from dotenv import load_dotenv
 
-# Configuration
-load_dotenv('.env.local')
+# Get the directory of the current script
+script_dir = Path(__file__).parent 
+
+# Construct the path to .env.local within the script's directory
+env_path = script_dir / '.env.local'
+load_dotenv(dotenv_path=env_path)
+
 
 
 #TODO: Pick one config convention. 
