@@ -15,7 +15,8 @@ field_types = {
     "precip": float,
     "pressure": float,
     "temp_f": float,
-    "wind_speed": float
+    "wind_speed": float,
+    "wind_dir": int
 }
 
 # Get all CSV files in the directory
