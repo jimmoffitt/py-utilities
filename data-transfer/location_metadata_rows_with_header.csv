@@ -1,0 +1,175 @@
+site_name,state,state_code,country,lat,long,timezone
+Akron,Ohio,OH,US,41.0814,-81.519,-18000
+Albuquerque,New Mexico,NM,US,35.0845,-106.6511,-25200
+Alexandria,Virginia,VA,US,38.82,-77.05,-18000
+Amarillo,Texas,TX,US,35.222,-101.8313,-21600
+Anchorage,Alaska,AK,US,61.2181,-149.9003,-32400
+Arlington,Texas,TX,US,32.7357,-97.1081,-21600
+Atlanta,Georgia,GA,US,33.749,-84.388,-18000
+Augusta,Georgia,GA,US,33.47,-81.975,-18000
+Austin,Texas,TX,US,30.2672,-97.7431,-21600
+Baltimore,Maryland,MD,US,39.2904,-76.6122,-18000
+Baton Rouge,Louisiana,LA,US,30.4508,-91.1545,-21600
+Birmingham,Alabama,AL,US,33.5207,-86.8025,-21600
+Boise,Idaho,ID,US,43.6135,-116.2035,-25200
+Boston,Massachusetts,MA,US,42.3584,-71.0598,-18000
+Bridgeport,Connecticut,CT,US,41.167,-73.2048,-18000
+Brownsville,Texas,TX,US,25.9018,-97.4975,-21600
+Buffalo,New York,NY,US,42.8865,-78.8784,-18000
+Cape Coral,Florida,FL,US,26.5629,-81.9495,-18000
+Cary,North Carolina,NC,US,35.7915,-78.7811,-18000
+Chandler,Arizona,AZ,US,33.3062,-111.8412,-25200
+Charlotte,North Carolina,NC,US,35.2271,-80.8431,-18000
+Chattanooga,Tennessee,TN,US,35.0456,-85.3097,-18000
+Chesapeake,Virginia,VA,US,36.819,-76.2749,-18000
+Chicago,Illinois,IL,US,41.85,-87.65,-21600
+Chula Vista,California,CA,US,32.64,-117.0842,-28800
+Cincinnati,Ohio,OH,US,39.162,-84.4569,-18000
+Clarksville,Tennessee,TN,US,36.5298,-87.3595,-21600
+Colorado Springs,Colorado,CO,US,38.8339,-104.8214,-25200
+Columbus,Ohio,OH,US,39.9612,-82.9988,-18000
+Corona,California,CA,US,33.8753,-117.5664,-28800
+Corpus Christi,Texas,TX,US,27.8006,-97.3964,-21600
+Dallas,Texas,TX,US,32.7668,-96.7836,-21600
+Dayton,Ohio,OH,US,39.7589,-84.1916,-18000
+Denver,Colorado,CO,US,39.7392,-104.9847,-25200
+Des Moines,Iowa,IA,US,41.6005,-93.6091,-21600
+Detroit,Michigan,MI,US,42.3314,-83.0458,-18000
+Durham,North Carolina,NC,US,36.0335,-78.8664,-18000
+Elk Grove,California,CA,US,38.4088,-121.3716,-28800
+El Paso,Texas,TX,US,31.8001,-106.2005,-25200
+Escondido,California,CA,US,33.1192,-117.0864,-28800
+Eugene,Oregon,OR,US,44.0521,-123.0867,-28800
+Fayetteville,North Carolina,NC,US,35.0527,-78.8784,-18000
+Fontana,California,CA,US,34.0922,-117.4351,-28800
+Fort Collins,Colorado,CO,US,40.5853,-105.0844,-25200
+Fort Lauderdale,Florida,FL,US,26.1223,-80.1434,-18000
+Fort Lee,New Jersey,NJ,US,40.8509,-73.9701,-18000
+Fort Wayne,Indiana,IN,US,41.1306,-85.1289,-18000
+Fort Worth,Texas,TX,US,32.7254,-97.3208,-21600
+Fremont,California,CA,US,37.5483,-121.9886,-28800
+Fresno,California,CA,US,36.6666,-119.8343,-28800
+Fullerton,California,CA,US,33.8703,-117.9253,-28800
+Garden Grove,California,CA,US,33.7739,-117.9415,-28800
+Garland,Texas,TX,US,32.9126,-96.6389,-21600
+Gilbert,Arizona,AZ,US,33.3528,-111.789,-25200
+Glendale,Arizona,AZ,US,33.5387,-112.186,-25200
+Grand Prairie,Texas,TX,US,32.746,-96.9978,-21600
+Grand Rapids,Michigan,MI,US,42.9634,-85.6681,-18000
+Greensboro,North Carolina,NC,US,36.0726,-79.792,-18000
+Hayward,California,CA,US,37.6688,-122.0808,-28800
+Henderson,Nevada,NV,US,36.0397,-114.9819,-28800
+Hialeah,Florida,FL,US,25.8576,-80.2781,-18000
+Hollywood,California,CA,US,34.0983,-118.3267,-28800
+Houston,Texas,TX,US,29.7633,-95.3633,-21600
+Huntington Beach,California,CA,US,33.6603,-117.9992,-28800
+Huntsville,Alabama,AL,US,34.7304,-86.5861,-21600
+Indianapolis,Indiana,IN,US,39.7684,-86.158,-18000
+Irvine,California,CA,US,33.6695,-117.8231,-28800
+Irving,Texas,TX,US,32.814,-96.9489,-21600
+Jackson,Oregon,OR,US,42.4165,-122.8345,-28800
+Jacksonville,Florida,FL,US,30.3322,-81.6556,-18000
+Jersey City,New Jersey,NJ,US,40.7282,-74.0776,-18000
+Joliet,Illinois,IL,US,41.525,-88.0817,-21600
+Kansas City,Missouri,MO,US,39.0997,-94.5786,-21600
+Knoxville,Tennessee,TN,US,35.9606,-83.9207,-18000
+Lakewood,Colorado,CO,US,39.7047,-105.0814,-25200
+Lancaster,Pennsylvania,PA,US,40.2504,-76.2499,-18000
+Laredo,Texas,TX,US,27.5064,-99.5075,-21600
+Las Vegas,Nevada,NV,US,36.175,-115.1372,-28800
+Lexington,Kentucky,KY,US,37.9887,-84.4777,-18000
+Lincoln,Nebraska,NE,US,40.8,-96.667,-21600
+Little Rock,Arkansas,AR,US,34.7465,-92.2896,-21600
+Long Beach,California,CA,US,33.767,-118.1892,-28800
+Los Angeles,California,CA,US,34.0522,-118.2437,-28800
+Louisville,Kentucky,KY,US,38.2542,-85.7594,-18000
+Lubbock,Texas,TX,US,33.6001,-101.8338,-21600
+Macon,Illinois,IL,US,39.8667,-88.9668,-21600
+Madison,Alabama,AL,US,34.7334,-86.5667,-21600
+Memphis,Tennessee,TN,US,35.1495,-90.049,-21600
+Mesa,Arizona,AZ,US,33.4223,-111.8226,-25200
+Mesquite,Texas,TX,US,32.7668,-96.5992,-21600
+Miami,Florida,FL,US,25.7743,-80.1937,-18000
+Milwaukee,Wisconsin,WI,US,43.0006,-87.9668,-21600
+Minneapolis,Minnesota,MN,US,44.98,-93.2638,-21600
+Miramar,Florida,FL,US,25.9873,-80.2323,-18000
+Mobile,Alabama,AL,US,30.7835,-88.2,-21600
+Modesto,California,CA,US,37.6391,-120.9969,-28800
+Montgomery,Maryland,MD,US,39.1501,-77.1997,-18000
+Moreno Valley,California,CA,US,33.9375,-117.2306,-28800
+Naperville,Illinois,IL,US,41.7859,-88.1473,-21600
+Nashville,Tennessee,TN,US,36.1659,-86.7844,-21600
+Newark,New Jersey,NJ,US,40.7357,-74.1724,-18000
+New Orleans,Louisiana,LA,US,29.9547,-90.0751,-21600
+Newport News,Virginia,VA,US,36.9788,-76.428,-18000
+New York City,New York,NY,US,40.7143,-74.006,-18000
+Norfolk,Massachusetts,MA,US,42.1668,-71.2495,-18000
+North Las Vegas,Nevada,NV,US,36.1989,-115.1175,-28800
+Oakland,Michigan,MI,US,42.6667,-83.3999,-18000
+Oceanside,California,CA,US,33.1959,-117.3795,-28800
+Oklahoma City,Oklahoma,OK,US,35.4676,-97.5164,-21600
+Omaha,Nebraska,NE,US,41.2586,-95.9378,-21600
+Ontario,California,CA,US,34.0633,-117.6509,-28800
+Orange,California,CA,US,33.7,-117.7675,-28800
+Orlando,Florida,FL,US,28.5383,-81.3792,-18000
+Overland Park,Kansas,KS,US,38.9822,-94.6708,-21600
+Oxnard,California,CA,US,34.1975,-119.177,-28800
+Palmdale,California,CA,US,34.5794,-118.1165,-28800
+Pasadena,Texas,TX,US,29.6911,-95.2091,-21600
+Paterson,New Jersey,NJ,US,40.9168,-74.1718,-18000
+Pembroke Pines,Florida,FL,US,26.0032,-80.2239,-18000
+Peoria,Illinois,IL,US,40.7667,-89.7668,-21600
+Philadelphia,Pennsylvania,PA,US,39.9523,-75.1638,-18000
+Phoenix,Arizona,AZ,US,33.4484,-112.074,-25200
+Pittsburgh,Pennsylvania,PA,US,40.4406,-79.9959,-18000
+Plano,Texas,TX,US,33.0198,-96.6989,-21600
+Pomona,California,CA,US,34.0553,-117.7523,-28800
+Pompano Beach,Florida,FL,US,26.2379,-80.1248,-18000
+Portland,Oregon,OR,US,45.5234,-122.6762,-28800
+Port St. Lucie,Florida,FL,US,27.2939,-80.3503,-18000
+Providence,Rhode Island,RI,US,41.824,-71.4128,-18000
+Raleigh,North Carolina,NC,US,35.7721,-78.6386,-18000
+Rancho Cucamonga,California,CA,US,34.1064,-117.5931,-28800
+Reno,Nevada,NV,US,39.5296,-119.8138,-28800
+Richmond,Virginia,VA,US,37.5538,-77.4603,-18000
+Riverside,California,CA,US,33.7333,-116.0508,-28800
+Rochester,New York,NY,US,43.1548,-77.6156,-18000
+Rockford,Illinois,IL,US,42.2711,-89.094,-21600
+Sacramento,California,CA,US,38.4666,-121.3177,-28800
+Salem,Oregon,OR,US,44.9231,-123.0244,-28800
+Salinas,California,CA,US,36.6777,-121.6555,-28800
+Salt Lake City,Utah,UT,US,40.7608,-111.8911,-25200
+San Antonio,Texas,TX,US,29.4241,-98.4936,-21600
+San Bernardino,California,CA,US,34.6667,-116.1675,-28800
+San Diego,California,CA,US,32.7153,-117.1573,-28800
+San Francisco,California,CA,US,37.7749,-122.4194,-28800
+San Jose,California,CA,US,37.3394,-121.895,-28800
+Santa Ana,California,CA,US,33.7456,-117.8678,-28800
+Santa Clarita,California,CA,US,34.3917,-118.5426,-28800
+Santa Rosa,California,CA,US,38.4486,-122.7047,-28800
+Savannah,Georgia,GA,US,32.0835,-81.0998,-18000
+Scottsdale,Arizona,AZ,US,33.5092,-111.899,-25200
+Seattle,Washington,WA,US,47.6062,-122.3321,-28800
+Shreveport,Louisiana,LA,US,32.5251,-93.7502,-21600
+Sioux Falls,South Dakota,SD,US,43.55,-96.7003,-21600
+Spokane,Washington,WA,US,47.6166,-117.3677,-28800
+Springfield,Missouri,MO,US,37.2153,-93.2982,-21600
+St. Louis,Missouri,MO,US,38.6273,-90.1979,-21600
+Stockton,California,CA,US,37.9577,-121.2908,-28800
+St. Petersburg,Florida,FL,US,27.7731,-82.64,-18000
+Sunnyvale,California,CA,US,37.3688,-122.0363,-28800
+Tacoma,Washington,WA,US,47.2529,-122.4443,-28800
+Tallahassee,Florida,FL,US,30.4383,-84.2807,-18000
+Tampa,Florida,FL,US,27.9475,-82.4584,-18000
+Tempe,Arizona,AZ,US,33.4148,-111.9093,-25200
+Toledo,Ohio,OH,US,39.8333,-4,3600
+Torrance,California,CA,US,33.8359,-118.3406,-28800
+Tucson,Arizona,AZ,US,32.2217,-110.9265,-25200
+Tulsa,Oklahoma,OK,US,36.1001,-95.9003,-21600
+Vancouver,Washington,WA,US,45.6311,-122.6717,-28800
+Virginia Beach,Virginia,VA,US,36.8529,-75.978,-18000
+Washington,Washington,WA,US,47.5001,-120.5015,-28800
+Wichita,Kansas,KS,US,37.6922,-97.3375,-21600
+Winston-Salem,North Carolina,NC,US,36.0999,-80.2442,-18000
+Worcester,Massachusetts,MA,US,42.3334,-71.8328,-18000
+Yonkers,New York,NY,US,40.9312,-73.8988,-18000
