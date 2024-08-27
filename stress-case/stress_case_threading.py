@@ -1,6 +1,7 @@
 import threading
 import requests
 from datetime import datetime, timedelta
+import argparse 
 import time
 import os
 import random
@@ -17,8 +18,13 @@ script_dir = Path(__file__).parent
 env_path = script_dir / '.env.local'
 load_dotenv(dotenv_path=env_path)
 
-# Number of threads to create
-NUM_THREADS = 10
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description='Tinybird and Postgres Stress Tester')
+parser.add_argument('--threads', type=int, default=10, help='Number of threads to use')
+args = parser.parse_args()
+
+# Use the number of threads from the command-line argument
+NUM_THREADS = args.threads
 
 TINYBIRD_KEY = os.getenv("TINYBIRD_KEY")
 
@@ -138,7 +144,7 @@ def worker():
     while True:
         call_tinybird_api()
         call_postgres_db()
-        time.sleep(0.01)  # Slight delay to simulate realistic conditions
+        time.sleep(0.01)  # Slight delay to simulate realistic conditions? A way to throttle. 
 
 threads = []
 # Creating threads
