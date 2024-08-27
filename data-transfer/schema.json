@@ -1,0 +1,18 @@
+{
+    "weather_reports": {
+      "columns": [
+        {"name": "timestamp", "type": "TIMESTAMP"},
+        {"name": "site_name", "type": "VARCHAR(100)"},
+        {"name": "temp_f", "type": "FLOAT"},
+        {"name": "clouds", "type": "VARCHAR(50)"},
+        {"name": "description", "type": "TEXT"},
+        {"name": "humidity", "type": "FLOAT"},
+        {"name": "precip", "type": "FLOAT"},
+        {"name": "pressure", "type": "FLOAT"},
+        {"name": "wind_dir", "type": "FLOAT"},
+        {"name": "wind_speed", "type": "FLOAT"}
+      ],
+      "primary_keys": ["timestamp", "site_name"]
+    }
+  }
+  
