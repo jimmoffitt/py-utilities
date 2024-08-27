@@ -1,11 +1,12 @@
 import requests
 import time
+from datetime import datetime, timedelta
 import schedule
 import os
 import json
 from pathlib import Path
 from dotenv import load_dotenv
-from datetime import datetime, timedelta
+
 
 # Get the directory of the current script
 script_dir = Path(__file__).parent 
@@ -18,29 +19,51 @@ SOURCE_KEY = os.getenv('TINYBIRD_SOURCE_TOKEN')
 TARGET_KEY = os.getenv('TINYBIRD_TARGET_TOKEN')
 
 DATA_SOURCE_URL = "https://api.tinybird.co/v0/pipes/reportsv2.json"
-EVENTS_API_URL = "https://api.us-west-2.aws.tinybird.co/v0/events?name=weather_data_from_tb"
-#EVENTS_API_URL = "https://api.tinybird.co/v0/events?name=weather_data_v2"
+EVENTS_API_URL = "https://api.us-west-2.aws.tinybird.co/v0/events?name=weather_data_json"
+MOST_RECENT_URL = "https://api.us-west-2.aws.tinybird.co/v0/pipes/most_recent.json" 
 
+# Some initial values... 
 end_time = datetime.now()
-start_time = end_time - timedelta(days=1)
+start_time = end_time - timedelta(days=7) 
 last_timestamp = None
 
+# First pull data from production live system and then write those updates to 
 def fetch_and_post_data():
     global last_timestamp
 
+    # Include the Tinybird token for the data fetch and data posts. 
+    headers_source = {"Authorization": f"Bearer {SOURCE_KEY}", "Content-Type": "application/json"}
+    headers_target = {"Authorization": f"Bearer {TARGET_KEY}", "Content-Type": "application/json"}
+
+    if not last_timestamp:
+        # Try to retrieve most recent time. 
+        try:
+            response = requests.get(MOST_RECENT_URL, headers=headers_target, timeout=5)  # Include headers in the request
+            if response.status_code == 200:
+                print("API request succeeded.")
+                start_time = response.json()['data'][0]['timestamp']
+            else:
+                print(f"API request failed with status code: {response.status_code}")
+        except requests.exceptions.RequestException as e:
+            print(f"API request error: {e}")
+
     params = {}
     
-    end_time = datetime.now() # Always request data up until now?
+    end_time = datetime.utcnow() # Always request data up until now?
     params['end_time'] = end_time.strftime('%Y-%m-%d %H:%M:%S')
     
     if last_timestamp: # then start there.
-        params['start_time'] = last_timestamp
+        # Parse the string timestamp into a datetime object
+        last_datetime = datetime.fromisoformat(last_timestamp)
+
+        # Add one second
+        new_datetime = last_datetime + timedelta(seconds=1)
+
+        # Convert back to ISO format string
+        params['start_time'] = new_datetime.isoformat()
     else: #otherwise, go back a day.     
         #params['start_time'] = (end_time - timedelta(days=7)).strftime('%Y-%m-%d %H:%M:%S')
-        params['start_time'] = '2024-08-13 23:59:39'
-
-    # Include the Source Key in the headers for the data fetch
-    headers_source = {"Authorization": f"Bearer {SOURCE_KEY}", "Content-Type": "application/json"}
+        params['start_time'] = start_time
     
     try:
         response = requests.get(DATA_SOURCE_URL, params=params, headers=headers_source, timeout=5)  # Include headers in the request
@@ -57,9 +80,6 @@ def fetch_and_post_data():
     
     if data: #Is there anything new to send? 
         last_timestamp = max(entry['timestamp'] for entry in data)
-
-        # Include the Target Key in the headers for posting data
-        headers_target = {"Authorization": f"Bearer {TARGET_KEY}", "Content-Type": "application/json"}
 
         for report in data:
             print(report)
