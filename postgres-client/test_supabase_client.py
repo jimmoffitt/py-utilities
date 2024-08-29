@@ -1,6 +1,7 @@
 import os
 import time 
 from supabase import create_client, Client
+from pathlib import Path
 from dotenv import load_dotenv
 
 # Get the directory of the current script

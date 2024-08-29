@@ -1,6 +1,7 @@
 import psycopg2
 import os
 import time
+from pathlib import Path
 from dotenv import load_dotenv
 
 # Get the directory of the current script
@@ -11,11 +12,11 @@ env_path = script_dir / '.env.local'
 load_dotenv(dotenv_path=env_path)
 
 # Retrieve connection parameters
-host = os.environ.get("DATABASE_HOST")
-port = os.environ.get("DATABASE_PORT")
-database = os.environ.get("DATABASE_NAME")
-user = os.environ.get("DATABASE_USER")
-password = os.environ.get("DATABASE_PASSWORD")
+host = os.environ.get("POSTGRES_DATABASE_HOST")
+port = os.environ.get("POSTGRES_DATABASE_PORT")
+database = os.environ.get("POSTGRES_DATABASE_NAME")
+user = os.environ.get("POSTGRES_DATABASE_USER")
+password = os.environ.get("POSTGRES_DATABASE_PASSWORD")
 
 query = "SELECT * FROM weather_reports WHERE site_name = 'Denver' LIMIT 1000"  
 
