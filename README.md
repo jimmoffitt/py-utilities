@@ -10,8 +10,12 @@ To start working with (near-) real-time data sources, these began with reading f
 The code here supports reading data from a `source` writing to a `target`.
 
 Currently, these pathways are supported: 
-* **Sources**: Tinybird API Endpoints. Note that Tinybird now supports the use of Postgres and DynamoDB databases as sources. 
-* **Targets**: Tinybird Data Sources, Postgres, and DynamoDB databases.
+* **Sources**: 
+  * Tinybird API Endpoints. Note that Tinybird now supports the use of Postgres and DynamoDB databases as sources. 
+* **Targets**:
+  * Tinybird Data Sources
+  * Postgres
+  * DynamoDB databases
   * Next? MongoDB?
 
 ## /postgres-client
