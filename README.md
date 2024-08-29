@@ -5,14 +5,18 @@ A collection of (somewhat random) scripts written to help with demos and example
 ## /data-transfer
 A collection of scripts for moving data between Tinybird, Postgres, and DynamoDB.
 
-For working with (near-) real-time data sources, these started with reading from a Tinybird API Endpoint and writing to a database. 
+To start working with (near-) real-time data sources, these began with reading from a Tinybird API Endpoint and writing to a database. 
 
 The code here supports reading data from a `source` writing to a `target`.
 
 Currently, these pathways are supported: 
-* **Sources**: Tinybird API Endpoints. Note that Tinybird now has support for using Postgres and DynamoDB databases as sources. 
+* **Sources**: Tinybird API Endpoints. Note that Tinybird now supports the use of Postgres and DynamoDB databases as sources. 
 * **Targets**: Tinybird Data Sources, Postgres, and DynamoDB databases.
   * Next? MongoDB?
+
+## /postgres-client
+
+This project started with an exploration of using Postgres data as a Tinybird Data Source. So, a first quick step was building simple scripts for connecting and reading from a Postgres database. There are three versions, one built for version 2 of the `psycopg` Python package, one built for the [current version 3 of `psycopg`](https://www.psycopg.org/), and one that uses the [Supabase Python client](https://supabase.com/docs/reference/python/introduction). Note that these do not write data to the database, but with the underlying connection and read access establish, it should be straightforward to write  data. 
   
 ## /stress-case
 
