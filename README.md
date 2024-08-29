@@ -22,7 +22,9 @@ This project started with an exploration of using Postgres data as a Tinybird Da
 
 A script built to make high-frequency requests to Tinybird and Postgres. The `stress-case.py` script was written to simulate high concurrency and its effects on performance and latency. 
 
-This script queries a Postgres database and a Tinybird API Endpoint with common requests. Query parameters include the name of a US City and a period of interest of up to 90 days. These parameters are randomized to minimize the effects of data caching on the latency results. Data requests to both Postgres and Tinybird are made with random city names and periods. Using Retool "success handlers", the time to complete the round-trip query is displayed. 
+This script queries a Postgres database and a Tinybird API Endpoint with common requests. Query parameters include the name of a US City and a period of interest of up to 90 days. These parameters are randomized to minimize the effects of data caching on the latency results. Data requests to both Postgres and Tinybird are made with random city names and periods. 
+
+For a workshop demo, a Retool dashboard was built, and Retool's "success handlers" were used to measure 'round-trip' latencies. 
 
 ## /converter
 Includes a `csv-to-ndjson.py` script that converts data files from the CSV format to the ndjson format. Both types of files can be easily imported into Tinybird, but the input format choice (CSV or NDJSON) affects the auto-generated schema.  CSV files result in a schema with *explicit* Data Types, whereas NDJSON files result in a schema based on JSON parsing. If you are writing these data to a Data Source you plan on feeding with the Events API, you need to load NDJSON files for any creating and backfilling a new Data Source.  
