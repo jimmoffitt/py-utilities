@@ -14,7 +14,7 @@ Currently, these pathways are supported:
   * Tinybird API Endpoints. Note that Tinybird now supports the use of Postgres and DynamoDB databases as sources. 
 * **Targets**:
   * Tinybird Data Sources
-  * Postgres
+  * Postgres databases
   * DynamoDB databases
   * Next? MongoDB?
 
