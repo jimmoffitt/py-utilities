@@ -17,11 +17,11 @@ load_dotenv(dotenv_path=env_path)
 
 # API and Database configuration
 DB_CONNECTION_PARAMS = {
-    'dbname': os.getenv("DATABASE_NAME"),
-    'user': os.getenv("DATABASE_USER"),
-    'password': os.getenv("DATABASE_PASSWORD"),
-    'host': os.getenv("DATABASE_HOST"),
-    'port': os.getenv("DATABASE_PORT")  
+    'dbname': os.getenv("POSTGRES_DATABASE_NAME"),
+    'user': os.getenv("POSTGRES_DATABASE_USER"),
+    'password': os.getenv("POSTGRES_DATABASE_PASSWORD"),
+    'host': os.getenv("POSTGRES_DATABASE_HOST"),
+    'port': os.getenv("POSTGRES_DATABASE_PORT")  
 }
 
 SOURCE_KEY = os.getenv('TINYBIRD_SOURCE_TOKEN')
