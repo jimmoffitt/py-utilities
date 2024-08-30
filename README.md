@@ -5,9 +5,9 @@ A collection of (somewhat random) scripts written to help with demos and example
 ## /data-transfer
 A collection of scripts for moving data between Tinybird, Postgres, and DynamoDB.
 
-To start working with (near-) real-time data sources, these began with reading from a Tinybird API Endpoint and writing to a database. 
+To start working with (near-) real-time data sources, these began with reading from a 'live' Tinybird system and writing to a database. 
 
-The code here supports reading data from a `source` writing to a `target`.
+The code here supports reading data from a `source` and writing to a `target`.
 
 Currently, these pathways are supported: 
 * **Sources**: 
