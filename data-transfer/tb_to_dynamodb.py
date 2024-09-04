@@ -21,19 +21,19 @@ load_dotenv(dotenv_path=env_path)
 
 # API and Database configuration
 DYNAMODB_TABLE_NAME = os.getenv("DYNAMODB_TABLE_NAME")
-AWS_REGION = os.getenv("AWS_REGION")
+DYNAMODB_AWS_REGION = os.getenv("DYNAMODB_AWS_REGION")
 
 SOURCE_KEY = os.getenv('TINYBIRD_SOURCE_TOKEN')
 
 DATA_SOURCE_URL = "https://api.tinybird.co/v0/pipes/reportsv2.json"
 
 # Initialize DynamoDB resource
-dynamodb = boto3.resource('dynamodb', region_name=AWS_REGION)
+dynamodb = boto3.resource('dynamodb', region_name=DYNAMODB_AWS_REGION)
 table = dynamodb.Table(DYNAMODB_TABLE_NAME)
 
 # Some initial values... 
 end_time = datetime.now()
-start_time = '2024-08-20 00:00:00'  # TODO: change this... set to a week ago?
+start_time = '2024-09-04 16:55:10'  # TODO: change this... set to a week ago?
 last_timestamp = None
 
 def fetch_and_post_data():
