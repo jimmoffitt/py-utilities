@@ -72,6 +72,35 @@ As events are created, these rules are enforced:
 
 Note that if a new event does not follow these rules, it is converted to a `view` event (FWIW, the percentage of `view` events will be inflated).
 
+The script support these settings:
+
+```yaml
+# E-commerce simulator options
+
+# Tinybird API endpoint
+tinybird_api_endpoint: "https://{CLOUD_REGION}.tinybird.co/v0/events?name={DATASOURCE_NAME}" 
+
+# E-commerce data setup
+num_customers: 500  # Number of unique customer IDs
+num_products: 500    # Number of unique product IDs
+
+# Script options
+duplicate_data_percentage: 2  # Percentage of duplicate events to generate
+db_update_interval_minutes: 10     # Interval (in minutes) to update totals in the database
+
+# Enable or disable writing to Postgres
+write_to_postgres: false  # Set to true to enable writing to Postgres
+
+# Event type weights (control the percentage of each event type)
+event_type_weights:
+  view: 65
+  cart: 15
+  uncart: 5
+  purchase: 10
+  return: 5
+
+```
+
 The next step is to simulate a Postgres table getting updated every ten minutes with updated inventory numbers.
 
 Also to-dos: 
