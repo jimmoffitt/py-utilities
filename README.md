@@ -2,6 +2,15 @@
 
 A collection of (somewhat random) scripts written to help with demos and examples. 
 
+## Collections
+- [data-transfer](#data-transfer)
+- [postgres-client](#postgres-client)
+- [stress-case](#stress-case)
+- [data-generators](#data-generators)
+  - [e-store.py](#e-storepy)
+- [converter](#converter)
+- [large-files](#large-files)
+
 ## /data-transfer
 A collection of scripts for moving data between Tinybird, Postgres, and DynamoDB.
 
@@ -56,16 +65,22 @@ The `generate_event` function returns an event (dictionary) representing a singl
 
 As events are created, these rules are enforced:
 
-`cart`: A product must be viewed before it can be added to the cart.
-`uncart`: A product can only be removed from the cart if it's already in there.
-`purchase`: A product must be in the cart before it can be purchased and removed from the cart after purchase.
-`return`: A product can only be returned if it was previously purchased.
+* `cart`: A product must be viewed before it can be added to the cart.
+* `uncart`: A product can only be removed from the cart if it's already in there.
+* `purchase`: A product must be in the cart before it can be purchased and removed from the cart after purchase.
+* `return`: A product can only be returned if it was previously purchased.
 
-Currently, if a new event does not follow these rules, it is converted to a `view` event (fwiw, the percentage of `view` events will be inflated).
+Note that if a new event does not follow these rules, it is converted to a `view` event (FWIW, the percentage of `view` events will be inflated).
+
+The next step is to simulate a Postgres table getting updated every ten minutes with updated inventory numbers.
+
+Also to-dos: 
+- [ ] Support higher RPS. Make multithreaded?
+- [ ] Work out the "batch inventory" Postgres details.
 
 
 ## /converter
-Includes a `csv-to-ndjson.py` script that converts data files from the CSV format to the ndjson format. Both types of files can be easily imported into Tinybird, but the input format choice (CSV or NDJSON) affects the auto-generated schema.  CSV files result in a schema with *explicit* Data Types, whereas NDJSON files result in a schema based on JSON parsing. If you are writing these data to a Data Source you plan on feeding with the Events API, you need to load NDJSON files for any creating and backfilling a new Data Source.  
+A `csv-to-ndjson.py` script that converts data files from the CSV format to the ndjson format. Both types of files can be easily imported into Tinybird, but the input format choice (CSV or NDJSON) affects the auto-generated schema.  CSV files result in a schema with *explicit* Data Types, whereas NDJSON files result in a schema based on JSON parsing. If you are writing these data to a Data Source you plan on feeding with the Events API, you need to load NDJSON files for any creating and backfilling a new Data Source.  
 
 Here is a section of a Data Source definition created by loading an NDJSON file:
 
