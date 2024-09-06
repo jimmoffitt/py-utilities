@@ -58,5 +58,6 @@ event_type_weights:
 The next step is to simulate a Postgres table getting updated every ten minutes with updated inventory numbers.
 
 Also to-dos: 
-- [ ] Support higher RPS. Make multithreaded?
+- [x] Support higher RPS. Make multithreaded?
 - [ ] Work out the "batch inventory" Postgres details.
+- [ ] Add ability to write to multiple Tinybird Data Source (for comparing behavior with different database engines).
